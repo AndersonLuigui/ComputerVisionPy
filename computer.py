@@ -9,7 +9,7 @@ from tkinter import filedialog, messagebox
 from tkinter import ttk
 
 # CARREGAR O MODELO MOBILENETV2 PRE TREINADO
-print("Carregando modelo MobileNetV2...")
+print("CARREGANDO MODELO DE IA MobileNetV2...")
 modelo = MobileNetV2(weights='imagenet')
 
 def processar_imagem(imagem_path):
@@ -43,7 +43,7 @@ def processar_imagem(imagem_path):
         messagebox.showerror("Erro", f"Erro ao processar: {str(e)}")
 
 def selecionar_imagem():
-    """Abre diálogo para selecionar imagem"""
+    """ABRE MODAL PARA CARREGAR A IMAGEM"""
     root = tk.Tk()
     root.withdraw()  # Esconde a janela principal
     
